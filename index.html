@@ -13,7 +13,7 @@
   <div class="page-bg" aria-hidden="true"></div>
   <!-- Header -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <a class="brand" href="#">Pieter van Laer</a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
@@ -26,19 +26,37 @@
 
   <!-- Hero (simple and mobile friendly) -->
   <section class="hero">
+    <div id="fish" class="para-item">
+      <img class="para-img sway slow breathe delay1" src="ASSETS/GOLDFISH.png" alt="">
+    </div>
+    <div id="lilly" class="para-item">
+      <img class="para-img sway medium breathe delay2" src="ASSETS/LILLY.png" alt="">
+    </div>
+    <div id="flowers-leaves" class="para-item">
+      <img class="para-img sway fast breathe delay3" src="ASSETS/FLOWERS_LEAVES.png" alt="">
+    </div>
+    <div id="eth-3" class="para-item">
+      <img class="para-img sway slow breathe delay1" src="ASSETS/ETH-3.png" alt="">
+    </div>
+    <div id="eth-2" class="para-item">
+      <img class="para-img sway slow breathe delay1" src="ASSETS/ETH-2.png" alt="">
+    </div>
+    <div id="flower-2" class="para-item">
+      <img class="para-img sway slow breathe delay1" src="ASSETS/FLOWER_2.png" alt="">
+    </div>
     <!-- <div class="container hero-inner"> -->
     <div class="hero-content">
       <h1 class="stacked">
-        <span>Imagine</span>
-        <span>Build</span>
-        <span>Experience</span>
+        <span id="span1">Imagine</span>
+        <span id="span2">Build</span>
+        <span id="span3">Experience</span>
       </h1>
       <p>Bold, botanical, and a little bit <span class="span-alive">alive.<span></p>
     </div>
     <div class="cta-container">
       <div class="cta-row">
         <h2 class="cta-text">Get in Touch</h2>
-        <a class="btn primary" href="#work">See Work</a>
+        <a class="btn primary" href="#work">Experience</a>
         <a class="btn" href="#contact">Contact</a>
       </div>
     </div>
@@ -48,40 +66,48 @@
   <main id="main">
     <section id="work" class="content">
       <div class="container">
-        <h2>Selected Work</h2>
+        <h2>Highlights</h2>
 
         <div class="card-grid">
           <article class="card">
-            <img class="card-media" src="assets/project-1.jpg" alt="Project 1 preview" loading="lazy" decoding="async" />
+            <img class="card-media" src="ASSETS/PYTHON_2.png" alt="Scripting preview" loading="lazy" decoding="async" />
             <div class="card-body">
-              <h3 class="card-title">Render Farm Automation</h3>
-              <p class="card-text">Python + AWS orchestration for Blender with cost-aware scaling.</p>
-              <div class="card-actions">
-                <a class="btn sm primary" href="#">View</a>
-                <a class="btn sm" href="#">GitHub</a>
-              </div>
+              <h3 class="card-title">Scripting</h3>
+              <p class="card-text">For over a decade, Python has been my go-to scripting language. I first picked it up using Blender, using it as part of a modeling and animation workflow. That early dive into creative coding gave me both a strong technical base and a fascination with making art through code.
+
+                From there, I explored Processing, unlocking ways to add motion and interactivity to my generative graphics. That journey eventually brought me to p5.js, where I could bring those same concepts into the browser. Along the way, I expanded into JavaScript and modern web development — blending code, design, and interaction into a single creative toolkit.</p>
             </div>
           </article>
 
           <article class="card">
-            <img class="card-media" src="assets/project-2.jpg" alt="Generative art sketch preview" loading="lazy" decoding="async" />
+            <img class="card-media" src="ASSETS/AUTOMATION_2.png" alt="Automation preview" loading="lazy" decoding="async" />
             <div class="card-body">
-              <h3 class="card-title">Generative Art in p5.js</h3>
-              <p class="card-text">Flow fields and line systems for interactive visuals in the browser.</p>
-              <div class="card-actions">
-                <a class="btn sm primary" href="#">Live</a>
-                <a class="btn sm" href="#">Repo</a>
-              </div>
+              <h3 class="card-title">Automation</h3>
+              <p class="card-text">While coding began as a personal passion, it quickly became an essential part of my professional toolkit. As a Linux Administrator at Blue Sky Studios, I used Python and Bash to automate a wide range of daily workflows, improving efficiency and reducing manual overhead. I also worked extensively with orchestration and configuration management tools such as Ansible and Puppet to scale these automations across the studio’s infrastructure.
+
+                In recent years, I’ve expanded my automation skill set to include Salt, Kubernetes, Helm, Rancher, and Terraform — enabling me to manage complex, distributed environments with the same efficiency and reliability I first achieved through scripting.</p>
             </div>
           </article>
 
           <article class="card">
-            <img class="card-media" src="assets/project-3.jpg" alt="Infrastructure preview" loading="lazy" decoding="async" />
+            <img class="card-media" src="ASSETS/AWS_2.png" alt="Infrastructure preview" loading="lazy" decoding="async" />
             <div class="card-body">
-              <h3 class="card-title">Infra as Code</h3>
-              <p class="card-text">Salt, Ansible, Terraform pipelines and blue-green deploys.</p>
+              <h3 class="card-title">Systems Engineering & Cloud Infrastructure</h3>
+              <p class="card-text">Scripting taught me an important lesson early on — you don’t always need to build everything from scratch. Leveraging existing tools and platforms can unlock tremendous potential. That mindset, combined with the rise of cloud computing, led me to explore AWS.
+
+                Over three years, I experimented with AWS for personal projects, including a 2021 build of a Blender-integrated render farm service hosted entirely in AWS. This project deepened my understanding of distributed computing and further fueled my interest in cloud solutions. After several months of focused study, I earned my AWS Solutions Architect Associate certification, solidifying my expertise in designing scalable, reliable cloud architectures.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media" src="ASSETS/WEB_DESIGN_2.png" alt="Web Design Preview" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3 class="card-title">Web Design</h3>
+              <p class="card-text">Whether scripting in Python for Blender, building a game in Unity, or deploying an application on AWS, my motivation has always been the same: creating an experience. Interactive or passive, the challenge of taking an idea and bringing it to life through code is what drives me to keep learning and growing as a developer.
+
+                My background in cloud services and graphically driven coding projects eventually led me to web development — a space where visual creativity meets interactive technology. I’m fascinated by the full stack: from the artistry of front-end design and the immersive experiences enabled by modern web technologies, to the intricate orchestration of backend systems and infrastructure. The complexity of weaving all these disparate components into a seamless, engaging application is as rewarding as it is inspiring.</p>
               <div class="card-actions">
-                <a class="btn sm" href="#">Case Study</a>
+                <a class="btn sm" href="https://strix223.github.io/hosting_test">Case Study</a>
               </div>
             </div>
           </article>
@@ -94,19 +120,22 @@
       <div class="container">
         <h2>About</h2>
         <article class="card card-bio">
-          <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Pieter van Laer" loading="lazy" decoding="async" />
+          <img class="avatar" src="ASSETS/PROFILE_2.jpg" alt="Portrait of Pieter van Laer" loading="lazy" decoding="async" />
           <div class="card-body">
             <h3 class="card-title">Creative Developer & Systems Engineer</h3>
-            <p class="card-text">I build interactive, visual experiences and the infrastructure that powers them.</p>
+            <p class="card-text">Systems engineer & creative coder. I build visual, interactive experiences and the infra that powers them.</p>
             <ul class="bio-list">
-              <li>Python, JavaScript, p5.js</li>
-              <li>AWS, Kubernetes, Terraform</li>
-              <li>Blender, automation, line-art aesthetic</li>
+              <li>⚙ Automation: Ansible, Salt, Puppet</li>
+              <li>☁ Infrastructure: ProxMox, Vsphere, Kubernetes, Terraform, AWS</li>
+              <li>🔧 Code: Python, JavaScript, Bash, C#</li>
+              <li>🧠 AI/LLMs: Ollama, Qdrant, Supabase, n8n, Langflow</li>
+              <li>🎨 Graphics: Blender, p5.js, Darktable, Adobe Suite, Gimp, Darktable</li>
+              <li>📷 Hobbies: Photography, Camping, Sailing, Aquariums</li>
             </ul>
             <div class="card-actions">
-              <a class="btn sm" href="mailto:hello@pietvanlaer.com">Email</a>
-              <a class="btn sm" href="#">LinkedIn</a>
-              <a class="btn sm" href="#">GitHub</a>
+              <a class="btn sm" href="pietvanlaer@gmail.com">Email</a>
+              <a class="btn sm" href="https://www.linkedin.com/in/piet-van-laer/">LinkedIn</a>
+              <a class="btn sm" href="https://github.com/piet-vanlaer">GitHub</a>
             </div>
           </div>
         </article>
@@ -121,7 +150,7 @@
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M22 6.6V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6.6l10 6.4 10-6.4zM22 6l-10 6L2 6V4h20v2z" fill="currentColor"/>
           </svg>
-          <a class="email" href="mailto:hello@pietvanlaer.com">hello@pietvanlaer.com</a>
+          <a class="email" href="pietvanlaer@gmail.com">pietvanlaer@gmail.com</a>
         </p>
       </div>
     </section>
