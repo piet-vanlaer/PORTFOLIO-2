@@ -2,328 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Piet van Laer</title>
-  <meta name="description" content="Short description of your site." />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Pieter van Laer • Portfolio</title>
+  <meta name="description" content="Visual • Interactive • Code" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="page-bg" aria-hidden="true"></div>
+  <!-- Header -->
   <header class="site-header">
-    <a class="brand" href="#">Piet van Laer</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="#highlights">Projects</a>
-      <a href="#bio">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-inner">
+      <a class="brand" href="#">Pieter van Laer</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="para-wrap back" aria-hidden="true">
-    <div id="lilly" class="para-item" style="--x: -42; --y: -35; --scale: 1.0; --rot: -3;">
-      <img class="para-img sway slow breathe" src="ASSETS/LILLY.png" alt="">
+  <!-- Hero (simple and mobile friendly) -->
+  <section class="hero">
+    <div id="fish" class="para-item">
+      <img class="para-img sway slow breathe delay1" src="ASSETS/GOLDFISH.png" alt="">
     </div>
-    <div id="lilly-2" class="para-item" style="--x: -42; --y: 0; --scale: 1.2; --rot: 30;">
-      <img class="para-img sway medium breathe delay1" src="ASSETS/LILLY.png" alt="">
+    <div id="lilly" class="para-item">
+      <img class="para-img sway medium breathe delay2" src="ASSETS/LILLY.png" alt="">
     </div>
-    <div id="lilly-3" class="para-item" style="--x: -39; --y: 27; --scale: 0.8; --rot: 250;">
-      <img class="para-img sway fast breathe delay2" src="ASSETS/LILLY.png" alt="">
+    <div id="flowers-leaves" class="para-item">
+      <img class="para-img sway fast breathe delay3" src="ASSETS/FLOWERS_LEAVES.png" alt="">
     </div>
-    <div id="lilly-4" class="para-item" style="--x: -20; --y: 28; --scale: 1.3; --rot: 90;">
-      <img class="para-img sway medium breathe delay3" src="ASSETS/LILLY.png" alt="">
+    <div id="eth-3" class="para-item">
+      <img class="para-img sway slow breathe delay1" src="ASSETS/ETH-3.png" alt="">
     </div>
-
-    <div id="oak-leaf" class="para-item" style="--x: -40; --y: -22; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway slow breathe delay2" src="ASSETS/OAK_LEAF.png" alt="">
+    <div id="eth-2" class="para-item">
+      <img class="para-img sway slow breathe delay1" src="ASSETS/ETH-2.png" alt="">
     </div>
-    <div id="oak-leaf-2" class="para-item" style="--x: -30; --y: -12; --scale: 1.5; --rot: 7;">
-      <img class="para-img sway medium breathe delay1" src="ASSETS/OAK_LEAF.png" alt="">
+    <div id="flower-2" class="para-item">
+      <img class="para-img sway slow breathe delay1" src="ASSETS/FLOWER_2.png" alt="">
     </div>
-    <div id="oak-leaf-3" class="para-item" style="--x: -40; --y: 35; --scale: 0.88; --rot: 120;">
-      <img class="para-img sway fast breathe" src="ASSETS/OAK_LEAF.png" alt="">
+    <!-- <div class="container hero-inner"> -->
+    <div class="hero-content">
+      <h1 class="stacked">
+        <span id="span1">Imagine</span>
+        <span id="span2">Build</span>
+        <span id="span3">Experience</span>
+      </h1>
+      <p>Bold, botanical, and a little bit <span class="span-alive">alive.<span></p>
     </div>
-    <div id="oak-leaf-4" class="para-item" style="--x: -18; --y: 43; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway medium breathe delay2" src="ASSETS/OAK_LEAF.png" alt="">
-    </div>
-    <div id="oak-leaf-5" class="para-item" style="--x: -40; --y: -22; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway slow breathe delay3" src="ASSETS/OAK_LEAF.png" alt="">
-    </div>
-
-    <div id="flower-2" class="para-item" style="--x: -36; --y: -30; --scale: 1; --rot: 7;">
-      <img class="para-img sway slow breathe delay2" src="ASSETS/FLOWER_2.png" alt="">
-    </div>
-    <div id="flower-2-2" class="para-item" style="--x: -28; --y: 30; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway medium breathe delay1" src="ASSETS/FLOWER_2.png" alt="">
-    </div>
-    <div id="flower-2-3" class="para-item" style="--x: 43; --y: -40; --scale: 0.6; --rot: 7;">
-      <img class="para-img sway fast breathe" src="ASSETS/FLOWER_2.png" alt="">
-    </div>
-
-
-    <div id="flower-3" class="para-item" style="--x: -46; --y: -22; --scale: 0.88; --rot: 90;">
-      <img class="para-img sway medium breathe delay1" src="ASSETS/FLOWER_3.png" alt="">
-    </div>
-
-    <div id="flower-4" class="para-item" style="--x: -38; --y: -20; --scale: 0.88; --rot: 60;">
-      <img class="para-img sway slow breathe delay2" src="ASSETS/FLOWER_4.png" alt="">
-    </div>
-
-    <div id="flower-5" class="para-item" style="--x: -36; --y: -10; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway medium breathe delay3" src="ASSETS/FLOWER_5.png" alt="">
-    </div>
-    <div id="flower-5-2" class="para-item" style="--x: -46; --y: 10; --scale: 1.2; --rot: 7;">
-      <img class="para-img sway fast breathe delay2" src="ASSETS/FLOWER_5.png" alt="">
-    </div>
-    <div id="flower-5-3" class="para-item" style="--x: -15; --y: 35; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway medium breathe delay1" src="ASSETS/FLOWER_5.png" alt="">
-    </div>
-
-    <div id="flowers-leaves" class="para-item" style="--x: -42; --y: -36; --scale: 0.88; --rot: 250;">
-      <img class="para-img sway slow breathe" src="ASSETS/FLOWERS_LEAVES.png" alt="">
-    </div>
-    <div id="flowers-leaves-2" class="para-item" style="--x: -42; --y: -25; --scale: 1; --rot: 200;">
-      <img class="para-img sway fast breathe delay1" src="ASSETS/FLOWERS_LEAVES.png" alt="">
-    </div>
-    <div id="flowers-leaves-3" class="para-item" style="--x: -42; --y: 5; --scale: 1.2; --rot: 200;">
-      <img class="para-img sway medium breathe delay2" src="ASSETS/FLOWERS_LEAVES.png" alt="">
-    </div>
-    <div id="flowers-leaves-4" class="para-item" style="--x: -30; --y: 5; --scale: 1.2; --rot: 30;">
-      <img class="para-img sway slow breathe delay3" src="ASSETS/FLOWERS_LEAVES.png" alt="">
-    </div>
-    <div id="flowers-leaves-5" class="para-item" style="--x: -13; --y: 35; --scale: 1.2; --rot: 90;">
-      <img class="para-img sway medium breathe delay2" src="ASSETS/FLOWERS_LEAVES.png" alt="">
-    </div>
-
-    <div id="frond-1" class="para-item" style="--x: -35; --y: -40; --scale: 0.88; --rot: 10;">
-      <img class="para-img sway fast breathe delay1" src="ASSETS/FROND_1.png" alt="">
-    </div>
-    <div id="frond-2" class="para-item" style="--x: -33; --y: -21; --scale: 0.88; --rot: 65;">
-      <img class="para-img sway medium breathe" src="ASSETS/FROND_2.png" alt="">
-    </div>
-    <div id="frond-3" class="para-item" style="--x: -28; --y: 15; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway slow breathe delay1" src="ASSETS/FROND_3.png" alt="">
-    </div>
-    <div id="frond-4" class="para-item" style="--x: -25; --y: 10; --scale: 0.88; --rot: 45;">
-      <img class="para-img sway medium breathe delay2" src="ASSETS/FROND_4.png" alt="">
-    </div>
-    <div id="frond-5" class="para-item" style="--x: -28; --y: -35; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway fast breathe delay3" src="ASSETS/FROND_5.png" alt="">
-    </div>
-    <div id="frond-6" class="para-item" style="--x: 37; --y: -46; --scale: 0.88; --rot: 200;">
-      <img class="para-img sway medium breathe delay2" src="ASSETS/FROND_6.png" alt="">
-    </div>
-    <div id="frond-7" class="para-item" style="--x: 42; --y: -25; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway slow breathe delay1" src="ASSETS/FROND_7.png" alt="">
-    </div>
-    <div id="leaf" class="para-item" style="--x: 40; --y: -40; --scale: 0.88; --rot: 180;">
-      <img class="para-img sway medium breathe" src="ASSETS/LEAF.png" alt="">
-    </div>
-    <div id="small-flower-1" class="para-item" style="--x: -38; --y: -41; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway fast breathe delay1" src="ASSETS/SMALL_FLOWER_1.png" alt="">
-    </div>
-    <div id="small-flower-1-2" class="para-item" style="--x: -38; --y: -41; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway medium breathe delay2" src="ASSETS/SMALL_FLOWER_1.png" alt="">
-    </div>
-    <div id="small-flower-1-3" class="para-item" style="--x: -33; --y: -3; --scale: 0.95; --rot: 7;">
-      <img class="para-img sway slow breathe delay3" src="ASSETS/SMALL_FLOWER_1.png" alt="">
-    </div>
-    <div id="small-flower-1-4" class="para-item" style="--x: 42; --y: -27; --scale: 0.95; --rot: 7;">
-      <img class="para-img sway medium breathe delay2" src="ASSETS/SMALL_FLOWER_1.png" alt="">
-    </div>
-    <div id="small-flower-2" class="para-item" style="--x: -31; --y: -22; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway fast breathe delay1" src="ASSETS/SMALL_FLOWER_2.png" alt="">
-    </div>
-    <div id="small-flower-2-2" class="para-item" style="--x: 38; --y: -40; --scale: 0.88; --rot: 7;">
-      <img class="para-img sway medium breathe" src="ASSETS/SMALL_FLOWER_2.png" alt="">
-    </div>
-    
-    <div id="fish" class="para-item" style="--x: 15; --y: -10; --scale: 1.1; --rot: 1;">
-        <img class="para-img sway slow breathe delay1" src="ASSETS/GOLDFISH.png" alt="">
-    </div>
-    <div id="eth-2-2" class="para-item" style="--x: -40; --y: -30; --scale: 0.8; --rot: -30;">
-        <img class="para-img sway medium breathe delay2" src="ASSETS/ETH-2.png" alt="">
-    </div>
-  </div>
-  
-  <!-- FRONT layer (parallax via .para-wrap.front) -->
-  <div class="para-wrap front" aria-hidden="true">
-    <div id="mushroom" class="para-item" style="--x: -20; --y: 30; --scale: 1.1; --rot: 1;">
-      <img class="para-img sway fast breathe delay3" src="ASSETS/MUSHROOM.png" alt="">
-    </div>
-    
-    <div id="moth" class="para-item" style="--x: -36; --y: 34; --scale: 1.1; --rot: 30;">
-      <img class="para-img sway medium breathe delay2" src="ASSETS/MOTH.png" alt="">
-    </div>
-    <div id="eth-1" class="para-item" style="--x: -45; --y: -15; --scale: 1.1; --rot: 180;">
-      <img class="para-img sway slow breathe delay1" src="ASSETS/ETH-1.png" alt="">
-    </div>
-    <div id="eth-2" class="para-item" style="--x: 46; --y: -48; --scale: 0.8; --rot: 180;">
-      <img class="para-img sway medium breathe" src="ASSETS/ETH-2.png" alt="">
-    </div>
-   
-    <div id="eth-3" class="para-item" style="--x: -30; --y: -10; --scale: 1.1; --rot: 1;">
-      <img class="para-img sway fast breathe delay1" src="ASSETS/ETH-3.png" alt="">
-    </div>
-
-    <div id="flower-3-2" class="para-item" style="--x: -22; --y: 43; --scale: 1.1; --rot: 0;">
-        <img class="para-img sway medium breathe delay2" src="ASSETS/FLOWER_3.png" alt="">
-    </div>
-    <div id="small-flower-2-3" class="para-item" style="--x: -29; --y: 23; --scale: 1.5; --rot: 7;">
-        <img class="para-img sway slow breathe delay3" src="ASSETS/SMALL_FLOWER_2.png" alt="">
-    </div>
-
-    <div id="flower-2-4" class="para-item" style="--x: -36; --y: 15; --scale: 1.2; --rot: 7;">
-        <img class="para-img sway medium breathe delay2" src="ASSETS/FLOWER_2.png" alt="">
-    </div>
-  </div>
-
-
-
-
-  <section class="hero" aria-label="Hero">
-  <div class="hero-content">
-    <h1>Imagine • Build • Experience</h1>
-    <p>Bold, botanical, and a little bit alive.</p>
-    <div class="cta-row">
-        <a class="btn primary" href="#highlights">See my work</a>
+    <div class="cta-container">
+      <div class="cta-row">
+        <h2 class="cta-text">Get in Touch</h2>
+        <a class="btn primary" href="#work">Experience</a>
         <a class="btn" href="#contact">Contact</a>
-    </div>
+      </div>
     </div>
   </section>
 
+  <!-- Work / Cards -->
   <main id="main">
-    <section id="highlights" class="content">
-        <div class="container reveal">
-          <h2>Highlights</h2>
-      
-          <!-- Grid of cards -->
-          <div class="card-grid">
-            <!-- Project card -->
-            <article class="card">
-              <div class="card-body">
-                <div class="card-tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">Processing</span>
-                  <span class="tag">Blender</span>
-                  <span class="tag">JavaScript</span>
-                </div>
-                <h3 class="card-title">Scripting</h3>
-                <p class="card-text">For over a decade, Python has been my go-to scripting language. I first picked it up using Blender, using it as part of a modeling and animation workflow. That early dive into creative coding gave me both a strong technical base and a fascination with making art through code.
+    <section id="work" class="content">
+      <div class="container">
+        <h2>Highlights</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <img class="card-media" src="ASSETS/PYTHON_2.png" alt="Scripting preview" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3 class="card-title">Scripting</h3>
+              <p class="card-text">For over a decade, Python has been my go-to scripting language. I first picked it up using Blender, using it as part of a modeling and animation workflow. That early dive into creative coding gave me both a strong technical base and a fascination with making art through code.
 
                 From there, I explored Processing, unlocking ways to add motion and interactivity to my generative graphics. That journey eventually brought me to p5.js, where I could bring those same concepts into the browser. Along the way, I expanded into JavaScript and modern web development — blending code, design, and interaction into a single creative toolkit.</p>
-                <div class="card-actions">
-                  <a class="btn sm primary" href="#" aria-label="View project Render Farm Automation">View</a>
-                  <a class="btn sm" href="#" aria-label="Open GitHub for Render Farm Automation">GitHub</a>
-                </div>
-              </div>
-            </article>
-      
-            <!-- Project card -->
-            <article class="card reveal">
-              <div class="card-body">
-                <div class="card-tags">
-                  <span class="tag">Puppet</span>
-                  <span class="tag">Ansible</span>
-                  <span class="tag">Salt</span>
-                  <span class="tag">Kubernetes</span>
-                  <span class="tag">Terraform</span>
-                  <span class="tag">Rancher</span>
-                </div>
-                <h3 class="card-title">Automation</h3>
-                <p class="card-text">While coding began as a personal passion, it quickly became an essential part of my professional toolkit. As a Linux Administrator at Blue Sky Studios, I used Python and Bash to automate a wide range of daily workflows, improving efficiency and reducing manual overhead. I also worked extensively with orchestration and configuration management tools such as Ansible and Puppet to scale these automations across the studio’s infrastructure.
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media" src="ASSETS/AUTOMATION_2.png" alt="Automation preview" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3 class="card-title">Automation</h3>
+              <p class="card-text">While coding began as a personal passion, it quickly became an essential part of my professional toolkit. As a Linux Administrator at Blue Sky Studios, I used Python and Bash to automate a wide range of daily workflows, improving efficiency and reducing manual overhead. I also worked extensively with orchestration and configuration management tools such as Ansible and Puppet to scale these automations across the studio’s infrastructure.
 
                 In recent years, I’ve expanded my automation skill set to include Salt, Kubernetes, Helm, Rancher, and Terraform — enabling me to manage complex, distributed environments with the same efficiency and reliability I first achieved through scripting.</p>
-                <div class="card-actions">
-                  <a class="btn sm primary" href="#">Live Demo</a>
-                  <a class="btn sm" href="#">Repo</a>
-                </div>
-              </div>
-            </article>
+            </div>
+          </article>
 
-            <article class="card reveal">
-              <div class="card-body">
-                <div class="card-tags">
-                  <span class="tag">AWS</span>
-                  <span class="tag">Cloud</span>
-                </div>
-                <h3 class="card-title">Systems Engineering & Cloud Infrastructure</h3>
-                <p class="card-text">Scripting taught me an important lesson early on — you don’t always need to build everything from scratch. Leveraging existing tools and platforms can unlock tremendous potential. That mindset, combined with the rise of cloud computing, led me to explore AWS.
+          <article class="card">
+            <img class="card-media" src="ASSETS/AWS_2.png" alt="Infrastructure preview" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3 class="card-title">Systems Engineering & Cloud Infrastructure</h3>
+              <p class="card-text">Scripting taught me an important lesson early on — you don’t always need to build everything from scratch. Leveraging existing tools and platforms can unlock tremendous potential. That mindset, combined with the rise of cloud computing, led me to explore AWS.
 
                 Over three years, I experimented with AWS for personal projects, including a 2021 build of a Blender-integrated render farm service hosted entirely in AWS. This project deepened my understanding of distributed computing and further fueled my interest in cloud solutions. After several months of focused study, I earned my AWS Solutions Architect Associate certification, solidifying my expertise in designing scalable, reliable cloud architectures.</p>
-                <div class="card-actions">
-                  <a class="btn sm primary" href="#">Live Demo</a>
-                  <a class="btn sm" href="#">Repo</a>
-                </div>
-              </div>
-            </article>
+            </div>
+          </article>
 
-            <article class="card reveal">
-              <div class="card-body">
-                <div class="card-tags">
-                  <span class="tag">AWS</span>
-                  <span class="tag">Cloud</span>
-                </div>
-                <h3 class="card-title">Web Design</h3>
-                <p class="card-text">Whether scripting in Python for Blender, building a game in Unity, or deploying an application on AWS, my motivation has always been the same: creating an experience. Interactive or passive, the challenge of taking an idea and bringing it to life through code is what drives me to keep learning and growing as a developer.
+          <article class="card">
+            <img class="card-media" src="ASSETS/WEB_DESIGN_2.png" alt="Web Design Preview" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3 class="card-title">Web Design</h3>
+              <p class="card-text">Whether scripting in Python for Blender, building a game in Unity, or deploying an application on AWS, my motivation has always been the same: creating an experience. Interactive or passive, the challenge of taking an idea and bringing it to life through code is what drives me to keep learning and growing as a developer.
 
                 My background in cloud services and graphically driven coding projects eventually led me to web development — a space where visual creativity meets interactive technology. I’m fascinated by the full stack: from the artistry of front-end design and the immersive experiences enabled by modern web technologies, to the intricate orchestration of backend systems and infrastructure. The complexity of weaving all these disparate components into a seamless, engaging application is as rewarding as it is inspiring.</p>
-                <div class="card-actions">
-                  <a class="btn sm primary" href="#">Live Demo</a>
-                  <a class="btn sm" href="#">Repo</a>
-                </div>
+              <div class="card-actions">
+                <a class="btn sm" href="https://strix223.github.io/hosting_test">Case Study</a>
               </div>
-            </article>
-      
-            <!-- Bio card (horizontal) -->
-            <article id="bio" class="card card-bio reveal">
-              <img class="avatar" src="ASSETS/PROFILE.jpg" alt="Portrait of Pieter van Laer" />
-              <div class="card-body">
-                <h3 class="card-title">About Pieter</h3>
-                <p class="card-text">Systems engineer & creative coder. I build visual, interactive experiences and the infra that powers them.</p>
-                <ul class="bio-list">
-                  <li>⚙ Automation: Ansible, Salt, Puppet</li>
-                  <li>☁ Infrastructure: ProxMox, Vsphere, Kubernetes, Terraform, AWS</li>
-                  <li>🔧 Code: Python, JavaScript, Bash, C#</li>
-                  <li>🧠 AI/LLMs: Ollama, Qdrant, Supabase, n8n, Langflow</li>
-                  <li>🎨 Graphics: Blender, p5.js, Darktable, Adobe Suite, Gimp, Darktable</li>
-                  <li>📷 Hobbys: Photography, Camping, Sailing, Aquariums</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-
-      <section id="contact" class="content">
-        <div class="container reveal">
-          <div class="contact-panel">
-            <h2>Contact</h2>
-      
-            <p class="contact-line">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M2 4h20v16H2z" fill="currentColor" opacity=".08"/>
-                <path d="M22 6.6V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6.6l10 6.4 10-6.4zM22 6l-10 6L2 6V4h20v2z" fill="currentColor"/>
-              </svg>
-              <a class="email" href="mailto:pietvanlaer@example.com">pietvanlaer@gmail.com</a>
-              <button class="copy" type="button" data-copy="pietvanlaer@gmail.com">Copy</button>
-            </p>
-      
-            <div class="social">
-              <a href="#" aria-label="GitHub">GitHub</a>
-              <span>•</span>
-              <a href="#" aria-label="LinkedIn">LinkedIn</a>
             </div>
-          </div>
+          </article>
         </div>
-      </section>
-
+      </div>
     </section>
 
-      
+    <!-- About card (bio) -->
+    <section id="about" class="content alt">
+      <div class="container">
+        <h2>About</h2>
+        <article class="card card-bio">
+          <img class="avatar" src="ASSETS/PROFILE_2.jpg" alt="Portrait of Pieter van Laer" loading="lazy" decoding="async" />
+          <div class="card-body">
+            <h3 class="card-title">Creative Developer & Systems Engineer</h3>
+            <p class="card-text">Systems engineer & creative coder. I build visual, interactive experiences and the infra that powers them.</p>
+            <ul class="bio-list">
+              <li>⚙ Automation: Ansible, Salt, Puppet</li>
+              <li>☁ Infrastructure: ProxMox, Vsphere, Kubernetes, Terraform, AWS</li>
+              <li>🔧 Code: Python, JavaScript, Bash, C#</li>
+              <li>🧠 AI/LLMs: Ollama, Qdrant, Supabase, n8n, Langflow</li>
+              <li>🎨 Graphics: Blender, p5.js, Darktable, Adobe Suite, Gimp, Darktable</li>
+              <li>📷 Hobbies: Photography, Camping, Sailing, Aquariums</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn sm" href="pietvanlaer@gmail.com">Email</a>
+              <a class="btn sm" href="https://www.linkedin.com/in/piet-van-laer/">LinkedIn</a>
+              <a class="btn sm" href="https://github.com/piet-vanlaer">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="content">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="contact-line">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 6.6V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6.6l10 6.4 10-6.4zM22 6l-10 6L2 6V4h20v2z" fill="currentColor"/>
+          </svg>
+          <a class="email" href="pietvanlaer@gmail.com">pietvanlaer@gmail.com</a>
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> Piet van Laer</small>
+      <small>© <span id="year"></span> Pieter van Laer</small>
     </div>
   </footer>
 
